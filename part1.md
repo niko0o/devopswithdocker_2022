@@ -1,6 +1,4 @@
-# DevOps with Docker
-
-https://devopswithdocker.com/
+# Part1 exercises
 
 ### 1.1 
 ```
@@ -512,8 +510,8 @@ niko@Niko-MacBook-Pro example-backend % docker run -p 8080:8080 example-backend
 [GIN] 2022/02/08 - 17:29:23 | 404 |       8.813µs |      172.17.0.1 | GET      "/favicon.ico"
 ```
 ### 1.14
-```
 Dockerfile front:
+```
 FROM node:16
 
 EXPOSE 5000
