@@ -567,3 +567,26 @@ Output front:
 niko@Niko-MacBook-Pro example-frontend % docker run -p 5001:5000 example-frontend
 INFO: Accepting connections at http://localhost:5000
 ```
+### 1.15 
+skip
+
+### 1.16
+https://docker-mooc-test.herokuapp.com/
+
+```
+niko@Niko-MacBook-Pro dockertest % heroku container:login
+Login Succeeded
+niko@Niko-MacBook-Pro dockertest % docker tag devopsdockeruh/coursepage registry.heroku.com/docker-mooc-test/web
+niko@Niko-MacBook-Pro dockertest % docker push registry.heroku.com/docker-mooc-test/web
+Using default tag: latest
+The push refers to repository [registry.heroku.com/docker-mooc-test/web]
+6f413faad0c5: Pushed 
+e15245eff772: Pushed 
+25c4d12b64e7: Pushed 
+1d454e07796f: Pushed 
+970073eeaee3: Pushed 
+8d3ac3489996: Pushed 
+latest: digest: sha256:8e8b3117fe9c50b5d8abacb9fac265d6c762d319a4fa61db96b85d7310fc3512 size: 1580
+niko@Niko-MacBook-Pro dockertest % heroku container:release web --app docker-mooc-test
+Releasing images web to docker-mooc-test... done
+```
